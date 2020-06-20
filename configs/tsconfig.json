@@ -10,7 +10,10 @@
     "target": "es6",
     "jsx": "react",
     "allowJs": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    // Explicitly force module resolution strategy to be node,
+    //  to prevent "module": "es6" from changing it to classic.
+    "moduleResolution": "node"
   },
   "include": ["../src/**/*"],
   "exclude": ["node_modules", "**/*.spec.ts"]
